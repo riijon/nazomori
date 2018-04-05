@@ -6,3 +6,5 @@ dist
 *.swp
 
 .idea
+.htaccess
+/00_sozai

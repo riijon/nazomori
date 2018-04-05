@@ -18,31 +18,31 @@
 @include foundation-badge;
 @include foundation-breadcrumbs;
 @include foundation-button-group;
-@include foundation-callout;
-@include foundation-card;
-@include foundation-close-button;
-@include foundation-menu;
-@include foundation-menu-icon;
-@include foundation-drilldown-menu;
-@include foundation-dropdown;
-@include foundation-dropdown-menu;
-@include foundation-responsive-embed;
+//@include foundation-callout;
+//@include foundation-card;
+//@include foundation-close-button;
+//@include foundation-menu;
+//@include foundation-menu-icon;
+//@include foundation-drilldown-menu;
+//@include foundation-dropdown;
+//@include foundation-dropdown-menu;
+//@include foundation-responsive-embed;
 @include foundation-label;
-@include foundation-media-object;
-@include foundation-off-canvas;
-@include foundation-orbit;
-@include foundation-pagination;
-@include foundation-progress-bar;
-@include foundation-slider;
-@include foundation-sticky;
-@include foundation-reveal;
-@include foundation-switch;
+//@include foundation-media-object;
+//@include foundation-off-canvas;
+//@include foundation-orbit;
+//@include foundation-pagination;
+//@include foundation-progress-bar;
+//@include foundation-slider;
+//@include foundation-sticky;
+//@include foundation-reveal;
+//@include foundation-switch;
 @include foundation-table;
-@include foundation-tabs;
-@include foundation-thumbnail;
-@include foundation-title-bar;
-@include foundation-tooltip;
-@include foundation-top-bar;
+//@include foundation-tabs;
+//@include foundation-thumbnail;
+//@include foundation-title-bar;
+//@include foundation-tooltip;
+//@include foundation-top-bar;
 @include foundation-visibility-classes;
 // @include foundation-float-classes;
 @include foundation-flex-classes;
@@ -55,11 +55,25 @@
 @import 'components/building-blocks/hero-full-screen';
 @import 'components/building-blocks/mobile-app-filter-menu';
 
+a {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.section-line {
+  background-image: url(../img/section-line.svg);
+  background-repeat: repeat-x;
+  height: 24px;
+}
 
 .mxw1000 {
   max-width: 1000px;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
+  margin-top: 145px;
 }
+
 .mb15 {
   margin-bottom: 15px;
 }
@@ -98,6 +112,13 @@ dl {
   margin: 0 auto 100px;
 }
 
+#about {
+  p {
+    //width: 400px;
+    //margin: 0 auto 10px;
+  }
+}
+
 #practice {
   max-width: 800px;
   margin: 0 auto 100px;
@@ -111,11 +132,57 @@ dl {
   }
 }
 
-form {
-  .form-type {
-    width: 365px;
-    margin: 30px auto;
+.event-text {
+  position: relative;
+
+  .event-information {
+    position: absolute;
+    bottom: 0;
   }
+}
+
+@media all and (max-width:990px) {
+  .event-text {
+    .event-information {
+      position: relative;
+      bottom: inherit;
+    }
+  }
+  .works {
+    margin: 0 auto 50px;
+  }
+}
+
+span.qa {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+form {
+  margin-bottom: 30px;
+  .form-type {
+    width: 400px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    div {
+      //display: inline-block;
+    }
+  }
+  .input-group-button {
+    input {
+      margin: 0 auto;
+      display: inline-block;
+      padding: 10px;
+    }
+  }
+}
+
+#twitter {
+  width: 400px;
+  margin: 30px auto 0;
 }
 
 footer {
@@ -123,4 +190,259 @@ footer {
   color: #fff;
   height: 300px;
   background-color: #218232;
+
+  .nazomori_logo {
+    width: 100px;
+    margin-top: 100px;
+  }
+}
+
+// nazo repository
+.header-nazo {
+  width: 100vw;
+  background-color: #218232;
+  text-align: center;
+  position: fixed;
+  top: 0;
+
+  img {
+    width: 35px;
+    margin: 10px;
+  }
+}
+
+.nazorepo-desc {
+  margin-top: -50px;
+  p {
+    width: 80%;
+    margin: 0 auto 30px;
+  }
+}
+
+.nazo {
+  margin: 30px auto;
+
+  iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+.we-quest {
+  width: 580px;
+}
+
+.mekiki {
+  display: flex;
+
+  .mekiki-left, .mekiki-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mekiki-left {
+    align-items: center;
+  }
+
+  .mekiki-right {
+    flex-direction: column;
+  }
+
+  img {
+    width: 300px;
+  }
+}
+
+// animation
+
+.load {
+  -webkit-animation: spin 15s linear infinite;
+  -moz-animation: spin 15s linear infinite;
+  -ms-animation: spin 15s linear infinite;
+  -o-animation: spin 15s linear infinite;
+  animation: spin 15s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.load-back {
+  -webkit-animation: spinback 15s linear infinite;
+  -moz-animation: spinback 15s linear infinite;
+  -ms-animation: spinback 15s linear infinite;
+  -o-animation: spinback 15s linear infinite;
+  animation: spinback 15s linear infinite;
+}
+
+@-webkit-keyframes spinback {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@-moz-keyframes spinback {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+
+@-ms-keyframes spinback {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(-360deg);
+  }
+}
+
+@-o-keyframes spinback {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(-360deg);
+  }
+}
+
+@keyframes spinback {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@include breakpoint(small only) {
+  .mb100 {
+    margin-bottom: 50px;
+  }
+
+  p {
+    line-height: 1.8;
+  }
+
+  .mxw1000 {
+    margin: 0 15px;
+  }
+
+  .medium-6 {
+    img {
+      margin-bottom: 15px;
+    }
+  }
+
+  .event-text {
+    h3 {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+    .event-information {
+      position: relative;
+    }
+  }
+  #practice {
+    img {
+      margin-bottom: 30px;
+    }
+  }
+  form {
+    .form-type {
+      width: 250px;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      div {
+        width: 110px;
+      }
+    }
+  }
+  #twitter {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  footer {
+    height: 150px;
+    .nazomori_logo {
+      width: 50px;
+      margin-top: 30px;
+    }
+  }
+
+  .nazorepo-desc {
+    margin-top: 100px;
+  }
+  .nazo iframe {
+    width: 100%;
+    height: 200px;
+  }
+  .mekiki-left {
+    margin-right: 10px;
+  }
+}
+
+.commingsoon {
+  position: absolute;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  line-height: 100vh;
+  text-align: center;
+}
+
+body, html {
+  //overflow: hidden;
 }

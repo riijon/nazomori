@@ -1,15 +1,17 @@
-$hero-full-screen-bg: url('/assets/img/nazomoriweb_tree.jpg') center center no-repeat;
+$hero-full-screen-bg: url('../img/nazomoriweb_tree.svg') center center no-repeat;
+//$hero-full-screen-bg: url('../img/02.png') center center no-repeat;
 $hero-full-screen-bg-size: 100vw;
-$hero-full-screen-text-color: $white;
+$hero-full-screen-text-color: rgba(76,143,55,0.3);
 
 .hero-full-screen {
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   background: $hero-full-screen-bg;
-  background-size: $hero-full-screen-bg-size;
+  background-size: 1368px;
 
   .middle-content-section {
     text-align: center;
@@ -50,6 +52,163 @@ $hero-full-screen-text-color: $white;
     .menu a {
       color: $hero-full-screen-text-color;
       font-weight: bold;
+    }
+  }
+
+  img {
+    position: absolute;
+  }
+
+  .haguruma1 {
+    width: 135px;
+    top: calc(50% - 75px);
+    left: calc(50% - 173px);
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+  }
+
+  .haguruma1_2 {
+    @extend .haguruma1;
+    width: 80px;
+    top: calc(50% + 57px);
+    left: calc(50% + 455px);
+  }
+
+  .haguruma2 {
+    width: 110px;
+    top: calc(50% - 145px);
+    left: calc(50% - 233px);
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+  }
+
+  .haguruma3 {
+    width: 150px;
+    top: calc(50% - 265px);
+    left: calc(50% - 190px);
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+  }
+
+  .haguruma3_2 {
+    @extend .haguruma3;
+    width: 130px;
+    top: calc(50% - 50px);
+    left: calc(50% + 475px);
+  }
+
+  .haguruma4 {
+    width: 200px;
+    top: calc(50% - -28px);
+    left: calc(50% - 520px);
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+  }
+
+  .tokei {
+    width: 325px;
+    top: calc(50% - 105px);
+    left: calc(50% + 95px);
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+  }
+
+  .kikai {
+    width: 100px;
+    top: calc(50% + 210px);
+    left: calc(50% - 400px);
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+  }
+
+  .nazomori-title {
+    width: 500px;
+    top: calc(50% + 70px);
+  }
+}
+
+@include breakpoint(small only) {
+  .hero-full-screen {
+    background-size: calc(1368px * 0.5);
+    background-image: url('../img/nazomoriweb_tree_sp.svg');
+
+    .bottom-content-section {
+      padding: 3rem;
+
+      svg {
+        height: rem-calc(40);
+        width: rem-calc(40);
+        fill: $hero-full-screen-text-color;
+      }
+    }
+
+    // optional demo styles
+    .top-bar {
+      background: transparent;
+
+      .menu {
+        background: transparent;
+      }
+
+      .menu-text {
+        color: $hero-full-screen-text-color;
+      }
+
+      .menu li {
+        display: flex;
+        align-items: center;
+      }
+
+      .menu a {
+        color: $hero-full-screen-text-color;
+        font-weight: bold;
+      }
+    }
+
+    img {
+      position: absolute;
+    }
+
+    .haguruma1 {
+      width: 67.5px;
+      top: calc(50% - 37.5px);
+      left: calc(50% - 86.5px);
+    }
+
+    .haguruma2 {
+      width: 65px;
+      top: calc(50% - 72.5px);
+      left: calc(50% - 116.5px);
+    }
+
+    .haguruma3 {
+      width: 75px;
+      top: calc(50% - 132.5px);
+      left: calc(50% - 95px);
+    }
+
+    .haguruma4 {
+      width: 200px;
+      top: calc(50% - -28px);
+      left: calc(50% - 520px);
+    }
+
+    .tokei {
+      width: calc(325px * 0.5);
+      top: calc(50% - 52.5px);
+      left: calc(50% + 47.5px);
+      z-index: 10;
+    }
+
+    .kikai {
+      width: calc(100px * 0.5);
+      top: calc(50% + (210px * 0.5));
+      left: calc(50% + 25px);
+    }
+
+    .nazomori-title {
+      width: 250px;
+      top: calc(50% + 35px);
     }
   }
 }

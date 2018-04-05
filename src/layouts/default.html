@@ -3,18 +3,40 @@
 <!doctype html>
 <html class="no-js" lang="ja">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115440978-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-115440978-1');
+    </script>
+
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="nazomoriは、東北を中心に活動する謎解きゲーム製作集団です。街や施設を舞台に、その場所を散策することで謎を解き明かす「周遊型謎解きゲーム」や、制限時間内に、屋内に仕掛けられた謎をチームで解き明かす「公演型謎解きゲーム」の製作を行っています。">
+    <link rel="icon" href="/assets/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/apple-touch-icon.png">
     <title>nazomori project</title>
+    <meta property="og:title" content="nazomori project">
+    <meta property="og:description" content="nazomoriは、東北を中心に活動する謎解きゲーム製作集団です。街や施設を舞台に、その場所を散策することで謎を解き明かす「周遊型謎解きゲーム」や、制限時間内に、屋内に仕掛けられた謎をチームで解き明かす「公演型謎解きゲーム」の製作を行っています。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://nazomori.com/">
+    <meta property="og:image" content="http://nazomori.com/assets/ogimage.png">
+    <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
     <script src="https://use.typekit.net/ylk4ttj.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
+  <!--<div class="commingsoon"> 公開準備中です。しばらくお待ちください。 </div>-->
 
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> body}}
+    {{> footer}}
 
     <script src="{{root}}assets/js/app.js"></script>
   </body>
