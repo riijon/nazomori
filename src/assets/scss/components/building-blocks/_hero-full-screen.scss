@@ -121,6 +121,21 @@ $hero-full-screen-text-color: rgba(76,143,55,0.3);
     -webkit-transform: translateY(-50%) translateX(-50%);
   }
 
+  #play {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    background-color: transparent;
+    top: calc(50% + 240px);
+    left: calc(50% - 378px);
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   .nazomori-title {
     width: 500px;
     top: calc(50% + 70px);
@@ -204,6 +219,13 @@ $hero-full-screen-text-color: rgba(76,143,55,0.3);
       width: calc(100px * 0.5);
       top: calc(50% + (210px * 0.5));
       left: calc(50% + 25px);
+    }
+
+    #play {
+      width: calc(50px * 0.5);
+      height: 15px;
+      top: calc(50% + (240px * 0.5));
+      left: calc(50% + 40px);
     }
 
     .nazomori-title {

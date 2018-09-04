@@ -42,3 +42,14 @@ $(window).on('load resize', function () {
   // console.log(resizePerT);
 });
 
+var audio = document.getElementById('sound');
+var audioStatus = false;
+document.getElementById('play').addEventListener('click', function () {
+  if (!audioStatus) {
+    audio.play();
+    audioStatus = true;
+  } else {
+    audio.pause();
+    audioStatus = false;
+  }
+});
