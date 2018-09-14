@@ -8,7 +8,6 @@ import Foundation from 'foundation-sites';
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-
 $(document).foundation();
 
 // SMOOTH SCROLL
@@ -44,12 +43,15 @@ $(window).on('load resize', function () {
 
 var audio = document.getElementById('sound');
 var audioStatus = false;
-document.getElementById('play').addEventListener('click', function () {
-  if (!audioStatus) {
-    audio.play();
-    audioStatus = true;
-  } else {
-    audio.pause();
-    audioStatus = false;
-  }
-});
+var playBtn = document.getElementById('play')
+if (playBtn) {
+  playBtn.addEventListener('click', function () {
+    if (!audioStatus) {
+      audio.play();
+      audioStatus = true;
+    } else {
+      audio.pause();
+      audioStatus = false;
+    }
+  });
+}

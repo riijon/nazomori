@@ -33,10 +33,10 @@
   <div id="now" class="grid-x grid-margin-x mb100 works">
     <div class="large-12 cell">
       <h2 class="text-center">最新の公演</h2>
-      <h2 class="text-center">『伊達政宗と城下町の秘密』</h2>
-      <div class="grid-x grid-margin-x">
+      <h2 class="text-center">『WE QUEST 2018』</h2>
+      <div class="grid-x grid-margin-x align-center">
         <div class="medium-4 cell">
-          <img class="mb15" src="assets/img/jokamachi.jpg" alt="">
+          <img class="mb15" src="assets/img/we_quest_2018.jpg" alt="WE QUEST 2018">
 
           <div class="grid-x grid-margin-x">
             <div class="medium-6 small-6 cell">
@@ -45,29 +45,75 @@
             <div class="medium-6 small-6 cell">
               <!--<img src="assets/img/masamune_02.jpg" alt="">-->
             </div>
-            <div class="medium-12 cell">
-              <a href="https://machi-kuru.com/nazotoki" target="_blank">
-                <button class="hollow button width-100 mt15">イベント特設ページ</button>
-              </a>
-            </div>
           </div>
         </div>
-        <div class="medium-8 cell event-text">
-          <h3 class="mb15">謎解き町歩き in 仙台市中心部商店街 <br>商店街を巡って謎を解き明かせ！</h3>
-          <p>ある日の朝、仙台朝市を散策していた伊達武将隊は、空から不思議な声を聞く。</p>
-          <p>「素敵な秘密の場所を教えてあげようか？」</p>
-          <p>
-            どうやら、仙台市中心部の８つの商店街に１つずつ謎が仕掛けられており、それらを解き明かすと、秘密の場所も声の正体も判明するらしい。正体不明の「天の声」からの挑戦を受けることにした武将隊一行は、手分けをして探索を始めるのであった…</p>
-          <p>実際に商店街を巡り、謎を解くための手がかりを見つけ出す周遊型謎解きゲーム。あなたは声の正体を突き止めることができるだろうか？</p>
-          <div class="event-information">
-            <h3>公演情報</h3>
-            <ul>
-              <li>主催：一般社団法人まちくる仙台</li>
-              <li>謎制作：謎杜プロジェクト</li>
-              <li>日時：2018年2月22日（木） 〜 3月25日（日）</li>
-              <li>場所：仙台市中心部商店街</li>
-            </ul>
+        <div class="medium-6 cell event-text">
+
+          <h3>公演情報</h3>
+          <ul>
+            <li>主催：仙台市　共催：仙台市交通局</li>
+            <li>謎制作：謎杜プロジェクト</li>
+            <li>日時：2018年9月1日（土） 〜 10月14日（日）</li>
+            <li>参加費：無料</li>
+            <li>参加方法：仙台市営地下鉄に置かれている謎解きブックを入手</li>
+            <li>詳細は、WE QUEST2018公式WEBサイトをご覧ください。</li>
+          </ul>
+          <div class="medium-12 cell">
+            <a href="http://2018.sendainazo.net" target="_blank">
+              <button class="hollow button width-100 mt15">WE QUEST2018公式WEBサイト</button>
+            </a>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="large-12 cell">
+      <h2 class="text-center">練習問題</h2>
+      <img src="assets/img/top/we_quest_exam.jpg" alt="">
+      <img src="assets/img/top/we_quest_exam_1.jpg" alt="">
+      <div class="text-center">
+        <form name="form1" id="id_form1" class="modal_form" onSubmit="modal1(); return false;">
+          <input name="textBox1" id="id_textBox1" type="text" value=""/>
+          <input class="button" type="button" value="解答を送信！" onclick="modal1();"/>
+        </form>
+        <!--modal-->
+        <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+          <div class="w3-modal-content w3-animate-zoom">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <p>正解！</p>
+            <img src="assets/img/top/we_quest_answer_1.jpg" style="width:100%">
+            <p>結果をツイートする</p>
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+               data-text="WE QUESTの練習問題２をクリアした！" data-url="https://nazomori.com/" data-via="nazomori"
+               data-show-count="false">Tweet</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </div>
+      <img src="assets/img/top/we_quest_exam_2.jpg" alt="">
+      <div class="text-center">
+        <a class="margin-bottom-2 display-inline-block" href="/we-quest2018-exam-print.html">印刷用のページを表示する</a>
+        <form name="form2" id="id_form2" class="modal_form" onSubmit="modal2(); return false;">
+          <input name="textBox2" id="id_textBox2" type="text" value=""/>
+          <input class="button" type="button" value="解答を送信！" onclick="modal2();"/>
+        </form>
+        <!--modal-->
+        <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+          <div class="w3-modal-content w3-animate-zoom">
+            <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+            <p>正解！</p>
+            <img src="assets/img/top/we_quest_answer_2.jpg" style="width:100%">
+            <p>結果をツイートする</p>
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+               data-text="WE QUESTの練習問題３をクリアした！" data-url="https://nazomori.com/" data-via="nazomori"
+               data-show-count="false">Tweet</a>
+          </div>
+        </div>
+      </div>
+      <!--modal-->
+      <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+        <div class="w3-modal-content w3-animate-zoom">
+          <span class="w3-button w3-hover-red w3-xlarge w3-display-topright modal-close">&times;</span>
+          <p>残念！もう一度チャレンジしてみよう。</p>
         </div>
       </div>
     </div>
@@ -78,25 +124,30 @@
   <div id="works" class="grid-x grid-margin-x mb100">
     <div class="large-12 cell">
       <h2 class="text-center">過去の公演</h2>
-      <div class="grid-x grid-margin-x works-nav">
-        <div class="medium-3 small-6 cell">
+      <div class="grid-x grid-margin-x works-nav align-center">
+        <div class="medium-2 small-6 cell mb15">
           <a href="#works01">
             <img src="assets/img/works_01.jpg" alt="">
           </a>
         </div>
-        <div class="medium-3 small-6 cell">
+        <div class="medium-2 small-6 cell mb15">
           <a href="#works02">
             <img src="assets/img/works_02.jpg" alt="">
           </a>
         </div>
-        <div class="medium-3 small-6 cell">
+        <div class="medium-2 small-6 cell mb15">
           <a href="#works03">
             <img src="assets/img/works_03.jpg" alt="">
           </a>
         </div>
-        <div class="medium-3 small-6 cell">
+        <div class="medium-2 small-6 cell mb15">
           <a href="#works04">
             <img src="assets/img/works_04.jpg" alt="">
+          </a>
+        </div>
+        <div class="medium-2 small-6 cell mb15">
+          <a href="#works05">
+            <img src="assets/img/jokamachi.jpg" alt="">
           </a>
         </div>
       </div>
@@ -289,6 +340,48 @@
               <li>主催：謎杜プロジェクト</li>
               <li>日時：2017年11月5日（日）</li>
               <li>場所：＠PARM CITY131 4G</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="works05" class="grid-x grid-margin-x mb100 works">
+    <div class="large-12 cell">
+      <h2 class="text-center">『伊達政宗と城下町の秘密』</h2>
+      <div class="grid-x grid-margin-x">
+        <div class="medium-4 cell">
+          <img class="mb15" src="assets/img/jokamachi.jpg" alt="">
+
+          <div class="grid-x grid-margin-x">
+            <div class="medium-6 small-6 cell">
+              <!--<img src="assets/img/masamune_01.jpg" alt="">-->
+            </div>
+            <div class="medium-6 small-6 cell">
+              <!--<img src="assets/img/masamune_02.jpg" alt="">-->
+            </div>
+            <div class="medium-12 cell">
+              <a href="https://machi-kuru.com/nazotoki" target="_blank">
+                <button class="hollow button width-100 mt15">イベント特設ページ</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="medium-8 cell event-text">
+          <h3 class="mb15">謎解き町歩き in 仙台市中心部商店街 <br>商店街を巡って謎を解き明かせ！</h3>
+          <p>ある日の朝、仙台朝市を散策していた伊達武将隊は、空から不思議な声を聞く。</p>
+          <p>「素敵な秘密の場所を教えてあげようか？」</p>
+          <p>
+            どうやら、仙台市中心部の８つの商店街に１つずつ謎が仕掛けられており、それらを解き明かすと、秘密の場所も声の正体も判明するらしい。正体不明の「天の声」からの挑戦を受けることにした武将隊一行は、手分けをして探索を始めるのであった…</p>
+          <p>実際に商店街を巡り、謎を解くための手がかりを見つけ出す周遊型謎解きゲーム。あなたは声の正体を突き止めることができるだろうか？</p>
+          <div class="event-information">
+            <h3>公演情報</h3>
+            <ul>
+              <li>主催：一般社団法人まちくる仙台</li>
+              <li>謎制作：謎杜プロジェクト</li>
+              <li>日時：2018年2月22日（木） 〜 3月25日（日）</li>
+              <li>場所：仙台市中心部商店街</li>
             </ul>
           </div>
         </div>

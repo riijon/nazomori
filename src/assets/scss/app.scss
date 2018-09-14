@@ -453,3 +453,22 @@ footer {
 body, html {
   //overflow: hidden;
 }
+
+.modal_form {
+  width: 200px;
+  margin: 0 auto;
+  .button {
+    width: 100%;
+  }
+}
+#now {
+  .w3-modal {
+    padding-top: 90px;
+    @include breakpoint(small only) {
+      padding-top: 75px;
+    }
+    .w3-modal-content {
+      padding: 30px;
+    }
+  }
+}

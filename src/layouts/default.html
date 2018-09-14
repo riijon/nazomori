@@ -1,6 +1,5 @@
 {{!-- This is the base layout for your project, and will be used on every page. --}}
-
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="ja">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,8 +27,29 @@
     <meta property="og:image" content="http://nazomori.com/assets/ogimage.png">
     <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/w3-nano.css">
     <script src="https://use.typekit.net/ylk4ttj.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script>
+      function modal1() {
+        var answer = document.forms.id_form1.id_textBox1.value;
+        console.log(answer);
+        if (answer == 'c' || answer == 'C') {
+          document.getElementById('modal02').style.display = 'block';
+        } else {
+          document.getElementById('modal04').style.display = 'block';
+        }
+      }
+      function modal2() {
+        var answer = document.forms.id_form2.id_textBox2.value;
+        console.log(answer);
+        if (answer == 'どくがんりゅう' || answer == '独眼竜') {
+          document.getElementById('modal03').style.display = 'block';
+        } else {
+          document.getElementById('modal04').style.display = 'block';
+        }
+      }
+    </script>
   </head>
   <body>
   <!--<div class="commingsoon"> 公開準備中です。しばらくお待ちください。 </div>-->
